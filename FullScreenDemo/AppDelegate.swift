@@ -11,7 +11,8 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    // 添加方向锁定属性，用于SwiftUI实现
+    var orientationLock: UIInterfaceOrientationMask = .all
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -33,10 +34,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        if let rotatable = window as? WindowRotatable {
-            return rotatable.supportedInterfaceOrientations
+        // 如果是PlayerWindow，则遵循其设置的方向
+        if let playerWindow = window as? PlayerWindow {
+            return playerWindow.supportedInterfaceOrientations
         }
-        return .portrait
+        
+        // 否则遵循当前的方向锁定设置
+        return orientationLock
     }
 }
 

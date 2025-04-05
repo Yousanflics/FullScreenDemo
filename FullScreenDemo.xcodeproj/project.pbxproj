@@ -16,6 +16,9 @@
 		0A81BB122518F50100723FFC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A81BB112518F50100723FFC /* PlayerView.swift */; };
 		0A81BB142518F8A600723FFC /* PlayerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A81BB132518F8A600723FFC /* PlayerWindow.swift */; };
 		0A81BB162518F91100723FFC /* PlayerFullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A81BB152518F91100723FFC /* PlayerFullScreenViewController.swift */; };
+		BC01788A2DA0937A0033D4FA /* SwiftUIPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0178892DA0937A0033D4FA /* SwiftUIPlayerView.swift */; };
+		BC01788B2DA0937A0033D4FA /* SwiftUIContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0178872DA0937A0033D4FA /* SwiftUIContentView.swift */; };
+		BC01788C2DA0937A0033D4FA /* SwiftUIPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0178882DA0937A0033D4FA /* SwiftUIPlayerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		0A81BB112518F50100723FFC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		0A81BB132518F8A600723FFC /* PlayerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWindow.swift; sourceTree = "<group>"; };
 		0A81BB152518F91100723FFC /* PlayerFullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerFullScreenViewController.swift; sourceTree = "<group>"; };
+		BC0178872DA0937A0033D4FA /* SwiftUIContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIContentView.swift; sourceTree = "<group>"; };
+		BC0178882DA0937A0033D4FA /* SwiftUIPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlayerManager.swift; sourceTree = "<group>"; };
+		BC0178892DA0937A0033D4FA /* SwiftUIPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 			children = (
 				0A81BB102518F4E800723FFC /* PlayerView */,
 				0A81BAFC2518F45C00723FFC /* AppDelegate.swift */,
+				BC0178872DA0937A0033D4FA /* SwiftUIContentView.swift */,
+				BC0178882DA0937A0033D4FA /* SwiftUIPlayerManager.swift */,
+				BC0178892DA0937A0033D4FA /* SwiftUIPlayerView.swift */,
 				0A81BAFE2518F45C00723FFC /* SceneDelegate.swift */,
 				0A81BB002518F45C00723FFC /* ViewController.swift */,
 				0A81BB022518F45C00723FFC /* Main.storyboard */,
@@ -158,6 +167,9 @@
 				0A81BB012518F45C00723FFC /* ViewController.swift in Sources */,
 				0A81BAFD2518F45C00723FFC /* AppDelegate.swift in Sources */,
 				0A81BAFF2518F45C00723FFC /* SceneDelegate.swift in Sources */,
+				BC01788A2DA0937A0033D4FA /* SwiftUIPlayerView.swift in Sources */,
+				BC01788B2DA0937A0033D4FA /* SwiftUIContentView.swift in Sources */,
+				BC01788C2DA0937A0033D4FA /* SwiftUIPlayerManager.swift in Sources */,
 				0A81BB142518F8A600723FFC /* PlayerWindow.swift in Sources */,
 				0A81BB162518F91100723FFC /* PlayerFullScreenViewController.swift in Sources */,
 				0A81BB122518F50100723FFC /* PlayerView.swift in Sources */,
@@ -236,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
